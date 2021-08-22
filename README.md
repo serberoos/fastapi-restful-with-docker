@@ -1,5 +1,5 @@
-# fastapi_basic_practice_bipasori
-https://www.youtube.com/watch?v=7frN5JPMsQU
+# Practice barisori's fastapi basic lecture and build a docker container
+Link : https://www.youtube.com/watch?v=7frN5JPMsQU
 
 * **Dockerfile content**
 
