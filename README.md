@@ -3,6 +3,8 @@ lecture Link : https://www.youtube.com/watch?v=7frN5JPMsQU
 
 * **Dockerfile content**
 
+Docker repository : https://hub.docker.com/repository/docker/jae99c/fastapi_docker_practice
+
   FROM python:3.7
 
   RUN pip install fastapi
