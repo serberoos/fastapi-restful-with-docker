@@ -25,5 +25,5 @@ lecture Link : https://www.youtube.com/watch?v=7frN5JPMsQU
 
   Open terminal and typing!
   
-  **docker run --rm --name fastapi_docker_practice -p 12332:80 fastapi_docker_practice:first**
+  **docker run --rm --name fastapi_docker_practice -p **[client_port_num]**:80 fastapi_docker_practice:first**
 
