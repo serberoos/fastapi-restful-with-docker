@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>City list</h1>
+    <!-- 아래는 Jinja2 표준-->
+    <!-- rscity 가 있다면? -->
+    {% if rsCity %}
+        {% for city in rsCity %}
+            <div>
+                {{city.name}} - {{city.timezone}}
+            </div>
+        {% endfor %}
+    {% else %}
+        <div>
+            No City...
+        </div>
+    {% endif %}
+
+</body>
+</html>

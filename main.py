@@ -1,3 +1,11 @@
+"""
+Project Structure
+Frontend - Jinja2 templates
+FastAPI server - City(name,timezone)
+CityModify(id,name,timezone)
+PUT - id와 index 매칭
+Database - Python list
+"""
 from fastapi import FastAPI
 from pydantic import BaseModel
 
