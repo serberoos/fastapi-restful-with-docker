@@ -20,6 +20,7 @@ lecture Link : https://www.youtube.com/watch?v=7frN5JPMsQU
   CMD ["uvicorn","app.mainlist:app","--host","0.0.0.0","--port","80"]
   
 
+
 * **How use it?**
 
   Open terminal and typing!
