@@ -1,5 +1,5 @@
 # Practice barisori's fastapi basic lecture and build a docker container
-Link : https://www.youtube.com/watch?v=7frN5JPMsQU
+lecture Link : https://www.youtube.com/watch?v=7frN5JPMsQU
 
 * **Dockerfile content**
 
