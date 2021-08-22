@@ -3,23 +3,23 @@ lecture Link : https://www.youtube.com/watch?v=7frN5JPMsQU
 
 * **Dockerfile content**
 
-Docker repository : https://hub.docker.com/repository/docker/jae99c/fastapi_docker_practice
+  * Docker repository : https://hub.docker.com/repository/docker/jae99c/fastapi_docker_practice
 
-  FROM python:3.7
+      FROM python:3.7
 
-  RUN pip install fastapi
-  RUN pip install uvicorn
-  RUN pip install requests
-  RUN pip install jinja2
+      RUN pip install fastapi
+      RUN pip install uvicorn
+      RUN pip install requests
+      RUN pip install jinja2
 
-  EXPOSE 80
+      EXPOSE 80
 
-  COPY ./app /app
-  COPY ./templates /templates
-  COPY ./\_\_pycache\_\_ /\_\_pycache\_\_
-  COPY ./.idea /.idea
+      COPY ./app /app
+      COPY ./templates /templates
+      COPY ./\_\_pycache\_\_ /\_\_pycache\_\_
+      COPY ./.idea /.idea
 
-  CMD ["uvicorn","app.mainlist:app","--host","0.0.0.0","--port","80"]
+      CMD ["uvicorn","app.mainlist:app","--host","0.0.0.0","--port","80"]
   
 
 
