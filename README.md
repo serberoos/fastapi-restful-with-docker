@@ -14,7 +14,7 @@ lecture Link : https://www.youtube.com/watch?v=7frN5JPMsQU
 
   COPY ./app /app
   COPY ./templates /templates
-  COPY ./__pycache__ /__pycache__
+  COPY ./\_\_pycache\_\_ /\_\_pycache\_\_
   COPY ./.idea /.idea
 
   CMD ["uvicorn","app.mainlist:app","--host","0.0.0.0","--port","80"]
