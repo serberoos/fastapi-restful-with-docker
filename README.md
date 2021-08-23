@@ -26,5 +26,6 @@ lecture Link : https://www.youtube.com/watch?v=7frN5JPMsQU
 * **How use it?**
 
   **docker push jae99c/fastapi_docker_practice:first**
+  
   **docker run --rm --name fastapi_docker_practice -p **[client_port_num]**:80 jae99c/fastapi_docker_practice:first**
 
