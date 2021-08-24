@@ -1,15 +1,19 @@
+# Dockerfile
+
+# pull the official docker image
 FROM python:3.7
 
-RUN pip install fastapi
-RUN pip install uvicorn
-RUN pip install requests
-RUN pip install jinja2
+RUN mkdir /fastapi
+COPY requirements.txt /fastapi
 
-EXPOSE 80
+# set work directory
+WORKDIR /fastapi
 
-COPY ./app /app
-COPY ./templates /templates
-COPY ./__pycache__ /__pycache__
-COPY ./.idea /.idea
+# install dependencies
+RUN pip install -r requirements.txt
 
-CMD ["uvicorn","app.mainlist:app","--host","0.0.0.0","--port","80"]
+COPY . /fastapi
+
+EXPOSE 8000
+
+CMD ["uvicorn","app.mainlist:app","--host","0.0.0.0","--port","8000"]
