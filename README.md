@@ -1,6 +1,17 @@
-# Implementation of fastapi RESTful API with docker container and docker compose
+## Info
+ Implementation of fastapi RESTful API with docker container and docker compose
+  
+## Language
+python
 
-* **Dockerfile content**
+## How use it?
+
+  docker push jae99c/fastapi_docker_practice:first
+
+  docker run --rm --name fastapi_docker_practice -p **[client_port_num]**:80 jae99c/fastapi_docker_practice:first
+  
+  
+  * **Dockerfile content**
 
   * Docker repository : https://hub.docker.com/repository/docker/jae99c/fastapi_docker_practice
 
@@ -20,14 +31,7 @@
 
       CMD ["uvicorn","app.mainlist:app","--host","0.0.0.0","--port","80"]
   
-
-
-* **How use it?**
-
-  docker push jae99c/fastapi_docker_practice:first
-
-  docker run --rm --name fastapi_docker_practice -p **[client_port_num]**:80 jae99c/fastapi_docker_practice:first
   
-* **Reference**
+## Reference
 
   https://www.youtube.com/watch?v=7frN5JPMsQU
